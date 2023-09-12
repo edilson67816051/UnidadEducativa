@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>UNIDAD EDUCATIVA MARCELINO CHAMPAGNAT</title>
+    <title>UE MARCELINO CHAMPAGNAT</title>
     
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,9 +30,39 @@ https://templatemo.com/tm-557-grad-school
 
 <body>
 
-   
-  <!--header-->
-  @extends('app.nav')
+   <!--header-->
+<header class="main-header clearfix" role="header">
+  <div class="logo">
+    <a href="#"><em>M.</em> CHAMPAGNAT</a>
+  </div>
+  <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+  <nav id="menu" class="main-nav" role="navigation">
+    <ul class="main-menu">
+      <li><a href="{{url('/')}}">Home</a></li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="{{url('/proyectos')}}">Proyectos</a></li>
+      
+      <li class="has-submenu"><a href="#section2">ACERCA DE</a>
+        <ul class="sub-menu">
+          <li><a href="{{url('/historia')}}">Pagina Facebook</a></li>
+
+          <li><a href="#section3">Telefono</a></li>
+          <li><a href="#section3">Administracion</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu"><a href="#section2">INDICE</a>
+        <ul class="sub-menu">
+          <li><a href="#section2">Festividades</a></li>
+          <li><a href="#section3">Acto Escolares</a></li>
+          <li><a href="#section3">Campamento</a></li>
+          <li><a href="#section3">Trabajo</a></li>
+      
+        </ul>
+      </li>
+      <li><a href="#section6">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
@@ -42,10 +72,10 @@ https://templatemo.com/tm-557-grad-school
 
       <div class="video-overlay header-text">
           <div class="caption">
-              <h6>Graduate School of Management</h6>
-              <h2><em>Your</em> Classroom</h2>
+              <h6>Unidad educativa</h6>
+              <h2><em>MARCELINO</em> CHAMPAGNAT</h2>
               <div class="main-button">
-                  <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
+                  <div class="scroll-to-section"><a href="#section2">sobre la UE</a></div>
               </div>
           </div>
       </div>
@@ -104,128 +134,100 @@ https://templatemo.com/tm-557-grad-school
 
   <section class="section why-us" data-section="section2">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section-heading">
-            <h2>Why choose Grad School?</h2>
+      <div id="HISTORIA" class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 style="color: white; font-family: 'Montserrat', sans-serif;">Historia de los hermanos maristas</h1>
+            <h3 style="text-align: start; color: white; font-family: 'Montserrat', sans-serif;">HERMANOS MARISTAS</h3>
+            <p style="color: white;">
+              INSTITUTO MARISTA: El Instituto nació el 2 de enero de 1817 en La
+              Valla, Francia, fundado por Saint Marcellin Champagnat, bajo el
+              nombre de Hermanos Pequeños de María, como una rama de la Sociedad
+              de María. Fue aprobado por la Santa Sede en 1863 como un instituto
+              autónomo y pontificio. Al mismo tiempo que se respetaba el nombre de
+              origen, Hermanos Maristas de las Escuelas (F.M.S. – Fratres Maristæ
+              a Scholis). Los Hermanos Maristas son hombres consagrados a Dios,
+              que siguen a Jesús a la manera de María, que vive en comunidad y
+              que están especialmente dedicados a la educación de niños y jóvenes,
+              y con más afecto a los más necesitados. Presentes en 80 países, los
+              Hermanos comparten la misión con miles de laicos que también
+              abrazan el carisma de Champagnat.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/img/MARCELINO1.jpg" alt="Maristas" width="220" height="300">
           </div>
         </div>
-        <div class="col-md-12">
-          <div id='tabs'>
-            <ul>
-              <li><a href='#tabs-1'>Best Education</a></li>
-              <li><a href='#tabs-2'>Top Management</a></li>
-              <li><a href='#tabs-3'>Quality Meeting</a></li>
-            </ul>
-            <section class='tabs-content'>
-              <article id='tabs-1'>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/images/choose-us-image-01.png" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <h4>Best Education</h4>
-                    <p>Grad School is free educational HTML template with Bootstrap 4.5.2 CSS layout. Feel free to use it for educational or commercial purposes. You may want to make <a href="https://paypal.me/templatemo" target="_parent" rel="sponsored">a little donation</a> to TemplateMo. Please tell your friends about us. Thank you.</p>
-                  </div>
-                </div>
-              </article>
-              <article id='tabs-2'>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/images/choose-us-image-02.png" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <h4>Top Level</h4>
-                    <p>You can modify this HTML layout by editing contents and adding more pages as you needed. Since this template has options to add dropdown menus, you can put many HTML pages.</p> 
-                    <p>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
-                  </div>
-                </div>
-              </article>
-              <article id='tabs-3'>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/images/choose-us-image-03.png" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <h4>Quality Meeting</h4>
-                    <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. For more information, you shall <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> now.</p>
-                  </div>
-                </div>
-              </article>
-            </section>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <h3 style="text-align: start; color: white; font-family: 'Montserrat', sans-serif;">FUNDADOR DEL INSTITUTO DE LOS HERMANOS MARISTA: SAN MARCELINO CHAMPAGNAT</h3>
+            <p style="color: white;">
+              1789-1840 Saint Marcellin Champagnat, un sacerdote marista,
+              fundador del Instituto de Hermanos Maristas, se enamora de Dios y
+              se entrega con entusiasmo a favor de los niños y jóvenes,
+              especialmente necesitados. Una comunidad internacional de hermanos
+              continúa su sueño hoy. Cuando ve a niños y jóvenes sin educación o
+              catecismo, exclama: “Necesitamos hermanos”. Y el 2 de enero de
+              1817, el proyecto del Instituto de los Hermanitos de María comenzó
+              con dos jóvenes. El Papa Juan Pablo II canoniza a Marcelino el 18
+              de abril de 1999 en la Plaza de San Pedro en el Vaticano y lo
+              reconoce como un santo de la Iglesia universal.
+            </p>
           </div>
+          <div class="col-md-6">
+            <img src="assets/img/MARCELINO2.jpg" alt="Maristas" width="300" height="250">
+          </div>
+        </div>
+        <div id="AAAA" class="container-fluid">
+          <h3 style="color: white; font-family: 'Montserrat', sans-serif;">Información administrativa</h3>
+          <p style="color: white;">"números; horarios; dirección"</p>
+          <br>
+          <h3 style="color: white; font-family: 'Montserrat', sans-serif;">Proyecto Socio Productivo</h3>
+          <br>
+          <h3 style="color: white; font-family: 'Montserrat', sans-serif;">Redes Sociales</h3>
+          <br>
+          <h3 style="color: white; font-family: 'Montserrat', sans-serif;">Recuerdos Promo Vereint 2023</h3>
+          <br>
+          <h3 style="color: white; font-family: 'Montserrat', sans-serif;">Eventos Escolares</h3>
         </div>
       </div>
     </div>
   </section>
-
-  <section class="section coming-soon" data-section="section3">
+  
+  
+  <!-- Sección de Horario de Atención -->
+<section class="section opening-hours" data-section="section3">
     <div class="container">
       <div class="row">
-        <div class="col-md-7 col-xs-12">
-          <div class="continer centerIt">
-            <div>
-              <h4>Take <em>any online course</em> and win $326 for your next class</h4>
-              <div class="counter">
-
-                <div class="days">
-                  <div class="value">00</div>
-                  <span>Days</span>
-                </div>
-
-                <div class="hours">
-                  <div class="value">00</div>
-                  <span>Hours</span>
-                </div>
-
-                <div class="minutes">
-                  <div class="value">00</div>
-                  <span>Minutes</span>
-                </div>
-
-                <div class="seconds">
-                  <div class="value">00</div>
-                  <span>Seconds</span>
-                </div>
-
-              </div>
-            </div>
+        <div class="col-md-12">
+          <h2 class="section-heading">Horario de Atención</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="day">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>Lunes a Viernes</h3>
           </div>
         </div>
-        <div class="col-md-5">
-          <div class="right-content">
-            <div class="top-content">
-              <h6>Register your free account and <em>get immediate</em> access to online courses</h6>
-            </div>
-            <form id="contact" action="" method="get">
-              <div class="row">
-                <div class="col-md-12">
-                  <fieldset>
-                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <button type="submit" id="form-submit" class="button">Get it now</button>
-                  </fieldset>
-                </div>
-              </div>
-            </form>
+        <div class="col-md-4">
+          <div class="time">
+            <i class="fas fa-clock"></i>
+            <h3>8:00 AM - 7:00 PM</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Dirección Aquí</h3>
           </div>
         </div>
       </div>
     </div>
   </section>
+  
+ 
 
   <section class="section courses" data-section="section4">
     <div class="container-fluid">

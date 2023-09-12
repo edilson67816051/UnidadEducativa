@@ -14,13 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('historia');
 });
 
 Route::get('/historia', function () {
-    return view('historia');
-});
-
-Route::get('/proyectos', function () {
-    return view('historia');
+    return 'Hola Este es una historia';
 });
